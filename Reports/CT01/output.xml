@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210903 00:32:31.674" rpa="false" schemaversion="2">
+<suite id="s1" name="Teste" source="C:\Users\Public\TestPrime\Testes\Teste.robot">
+<test id="s1-t1" name="CT01:Enviar curriculum">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210903 00:32:41.936" level="INFO">Opening browser 'chrome' to base url 'https://www.primecontrol.com.br/'.</msg>
+<status status="PASS" starttime="20210903 00:32:41.935" endtime="20210903 00:32:56.441"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210903 00:32:56.442" endtime="20210903 00:32:56.879"/>
+</kw>
+<status status="PASS" starttime="20210903 00:32:41.934" endtime="20210903 00:32:56.880"/>
+</kw>
+<kw name="Dado que Acesso o Site" library="Steps">
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:33:07.013" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210903 00:32:56.997" endtime="20210903 00:33:07.013"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210903 00:33:07.014" endtime="20210903 00:33:07.184"/>
+</kw>
+<status status="PASS" starttime="20210903 00:32:56.995" endtime="20210903 00:33:07.185"/>
+</kw>
+<kw name="Quando clico no campo contato" library="Steps">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:33:12.205" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210903 00:33:07.187" endtime="20210903 00:33:12.206"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CampoContato}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210903 00:33:12.207" endtime="20210903 00:33:12.849"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CampoContato}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210903 00:33:12.852" level="INFO">Clicking element 'xpath=//li[@id='menu-item-875']'.</msg>
+<status status="PASS" starttime="20210903 00:33:12.850" endtime="20210903 00:33:13.476"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210903 00:33:14.151" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210903 00:33:13.477" endtime="20210903 00:33:14.151"/>
+</kw>
+<status status="PASS" starttime="20210903 00:33:07.186" endtime="20210903 00:33:14.152"/>
+</kw>
+<kw name="E clico no campo trabalhe conosco" library="Steps">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:33:19.158" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210903 00:33:14.155" endtime="20210903 00:33:19.158"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CampoTrabalheConosco}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210903 00:33:19.159" endtime="20210903 00:33:19.227"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CampoTrabalheConosco}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210903 00:33:19.228" level="INFO">Clicking element 'xpath=//li[@id='menu-item-2156']//a[@href='/trabalhe-conosco']'.</msg>
+<status status="PASS" starttime="20210903 00:33:19.227" endtime="20210903 00:33:22.850"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210903 00:33:23.139" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210903 00:33:22.851" endtime="20210903 00:33:23.140"/>
+</kw>
+<status status="PASS" starttime="20210903 00:33:14.153" endtime="20210903 00:33:23.140"/>
+</kw>
+<kw name="E clico na opção cadastre seu curriculum" library="Steps">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:33:28.163" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210903 00:33:23.160" endtime="20210903 00:33:28.163"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CampoCurriculum}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210903 00:33:28.164" endtime="20210903 00:33:28.236"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CampoCurriculum}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210903 00:33:28.238" level="INFO">Clicking element 'xpath=//a[@href='https://jobs.quickin.io/primecontrol/apply?src=website']'.</msg>
+<status status="PASS" starttime="20210903 00:33:28.237" endtime="20210903 00:33:29.286"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:33:32.293" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210903 00:33:29.287" endtime="20210903 00:33:32.293"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title=Cadastre seu currículo- Prime Control</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20210903 00:33:32.293" endtime="20210903 00:33:32.726"/>
+</kw>
+<status status="PASS" starttime="20210903 00:33:23.159" endtime="20210903 00:33:32.726"/>
+</kw>
+<kw name="E preencho os campos &quot;Jessica Rocha&quot;, &quot;Analista de QA&quot;, &quot;jessicarochalima21@gmail.com&quot; e &quot;11987793226&quot;" library="Steps" sourcename="E preencho os campos &quot;${NomeCompleto}&quot;, &quot;${CargoPretendido}&quot;, &quot;${Email}&quot; e &quot;${Telefone}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:33:42.742" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210903 00:33:32.729" endtime="20210903 00:33:42.743"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CampoNome}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210903 00:33:42.743" endtime="20210903 00:33:42.811"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CampoNome}</arg>
+<arg>${NomeCompleto}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210903 00:33:42.812" level="INFO">Typing text 'Jessica Rocha' into text field 'xpath=//div[@class='form-group']//input[@id='name']'.</msg>
+<status status="PASS" starttime="20210903 00:33:42.811" endtime="20210903 00:33:43.189"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:33:48.206" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210903 00:33:43.189" endtime="20210903 00:33:48.206"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CampoCargo}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210903 00:33:48.207" endtime="20210903 00:33:48.272"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CampoCargo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210903 00:33:48.273" level="INFO">Clicking element 'xpath=//div[@class='form-group']//input[@id='headline']'.</msg>
+<status status="PASS" starttime="20210903 00:33:48.273" endtime="20210903 00:33:48.477"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CampoCargo}</arg>
+<arg>${CargoPretendido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210903 00:33:48.479" level="INFO">Typing text 'Analista de QA' into text field 'xpath=//div[@class='form-group']//input[@id='headline']'.</msg>
+<status status="PASS" starttime="20210903 00:33:48.478" endtime="20210903 00:33:48.769"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:33:53.784" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210903 00:33:48.770" endtime="20210903 00:33:53.785"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${campoEmail}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210903 00:33:53.785" endtime="20210903 00:33:53.846"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${campoEmail}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210903 00:33:53.847" level="INFO">Clicking element 'xpath=//div[@class='form-group']//input[@id='email']'.</msg>
+<status status="PASS" starttime="20210903 00:33:53.846" endtime="20210903 00:33:54.033"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${campoEmail}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210903 00:33:54.034" level="INFO">Typing text 'jessicarochalima21@gmail.com' into text field 'xpath=//div[@class='form-group']//input[@id='email']'.</msg>
+<status status="PASS" starttime="20210903 00:33:54.033" endtime="20210903 00:33:54.459"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:33:59.467" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210903 00:33:54.459" endtime="20210903 00:33:59.467"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CampoTelefone}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210903 00:33:59.468" endtime="20210903 00:33:59.518"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CampoTelefone}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210903 00:33:59.520" level="INFO">Clicking element 'xpath=//div[@class='flex-grow-1 mr-1']//input[@id='phone-0']'.</msg>
+<status status="PASS" starttime="20210903 00:33:59.519" endtime="20210903 00:33:59.732"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CampoTelefone}</arg>
+<arg>${Telefone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210903 00:33:59.735" level="INFO">Typing text '11987793226' into text field 'xpath=//div[@class='flex-grow-1 mr-1']//input[@id='phone-0']'.</msg>
+<status status="PASS" starttime="20210903 00:33:59.733" endtime="20210903 00:33:59.980"/>
+</kw>
+<status status="PASS" starttime="20210903 00:33:32.728" endtime="20210903 00:33:59.981"/>
+</kw>
+<kw name="Então dou click em enviar Curriculum e valido que foi enviado &quot;com sucesso&quot;" library="Steps" sourcename="Então dou click em enviar Curriculum e valido que foi enviado &quot;${Mensagem}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:34:04.985" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210903 00:33:59.984" endtime="20210903 00:34:04.986"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CampoArquivo}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210903 00:34:04.986" endtime="20210903 00:34:05.042"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CampoArquivo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210903 00:34:05.043" level="INFO">Clicking element 'xpath=//div[@class='custom-file']'.</msg>
+<status status="PASS" starttime="20210903 00:34:05.042" endtime="20210903 00:34:05.343"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210903 00:34:05.656" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210903 00:34:05.345" endtime="20210903 00:34:05.656"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:34:08.663" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210903 00:34:05.657" endtime="20210903 00:34:08.663"/>
+</kw>
+<kw name="Double Click" library="SikuliLibrary">
+<arg>${DOCUMENTOS}</arg>
+<doc>Double click</doc>
+<msg timestamp="20210903 00:34:11.835" level="INFO">Params: [C:\Users\Public\TestPrime\Resource\Imagens\Documentos.png]</msg>
+<msg timestamp="20210903 00:34:11.835" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1630640050274.png'/&gt;
+[log] DOUBLE CLICK on L[456,220]@S(0) (798 msec)</msg>
+<status status="PASS" starttime="20210903 00:34:08.664" endtime="20210903 00:34:11.835"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:34:14.842" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210903 00:34:11.835" endtime="20210903 00:34:14.842"/>
+</kw>
+<kw name="Double Click" library="SikuliLibrary">
+<arg>${CURRICULUM}</arg>
+<doc>Double click</doc>
+<msg timestamp="20210903 00:34:16.880" level="INFO">Params: [C:\Users\Public\TestPrime\Resource\Imagens\Curriculum.png]</msg>
+<msg timestamp="20210903 00:34:16.880" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1630640055462.png'/&gt;
+[log] DOUBLE CLICK on L[194,166]@S(0) (850 msec)</msg>
+<status status="PASS" starttime="20210903 00:34:14.843" endtime="20210903 00:34:16.881"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:34:18.885" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210903 00:34:16.881" endtime="20210903 00:34:18.885"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BotaoFinalizar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210903 00:34:18.886" level="INFO">Clicking element 'xpath=//button[@class='btn btn-lg btn-block-mobile btn-primary']'.</msg>
+<status status="PASS" starttime="20210903 00:34:18.886" endtime="20210903 00:34:19.090"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210903 00:34:22.107" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210903 00:34:19.091" endtime="20210903 00:34:22.107"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${MensagemSucesso}</arg>
+<arg>${Mensagem}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210903 00:34:22.189" level="INFO">Element 'xpath=//*[contains(text(),'com sucesso')]' contains text 'com sucesso'.</msg>
+<status status="PASS" starttime="20210903 00:34:22.107" endtime="20210903 00:34:22.191"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210903 00:34:22.434" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210903 00:34:22.193" endtime="20210903 00:34:22.434"/>
+</kw>
+<status status="PASS" starttime="20210903 00:33:59.983" endtime="20210903 00:34:22.434"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210903 00:34:22.679" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210903 00:34:22.438" endtime="20210903 00:34:22.679"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210903 00:34:22.679" endtime="20210903 00:34:26.540"/>
+</kw>
+<status status="PASS" starttime="20210903 00:34:22.436" endtime="20210903 00:34:26.541"/>
+</kw>
+<kw name="Stop Recording Test" library="AutoRecorder">
+<arg>CT01:Enviar curriculum</arg>
+<doc>There is no need to execute this keyword manually.
+Basically - alias for https://mihaiparvu.github.io/ScreenCapLibrary/ScreenCapLibrary.html#Stop%20Video%20Recording</doc>
+<msg timestamp="20210903 00:34:26.613" level="INFO" html="true">&lt;a href="recording_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210903 00:34:26.547" endtime="20210903 00:34:26.613"/>
+</kw>
+<status status="PASS" starttime="20210903 00:32:39.559" endtime="20210903 00:34:26.545"/>
+</test>
+<status status="PASS" starttime="20210903 00:32:31.679" endtime="20210903 00:34:26.635"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Teste">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
